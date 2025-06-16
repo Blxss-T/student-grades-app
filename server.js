@@ -10,6 +10,9 @@ class Student {
         return `Name: ${this.name}, Grade : ${this.grade}`;
     }
 }
+
+const students = [];
+
 app.post('/students', (req, res) => {
   const { name, grade } = req.body;
 
